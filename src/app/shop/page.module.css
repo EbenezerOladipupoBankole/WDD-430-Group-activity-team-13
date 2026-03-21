@@ -1,0 +1,93 @@
+.shop {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 7rem 7rem 1fr 12rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-lg);
+  background: var(--surface-soft);
+}
+
+.topText {
+  font-size: 0.8rem;
+}
+
+.filterBox {
+  justify-self: end;
+  min-width: 10rem;
+  min-height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+  font-size: 0.8rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 6rem repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.sellerBox,
+.itemBox {
+  min-height: 5.5rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(248, 250, 252, 0.14);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+}
+
+.item {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(248, 250, 252, 0.1);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.025);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 163, 115, 0.26);
+}
+
+.itemName {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 820px) {
+  .topRow,
+  .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .filterBox {
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 540px) {
+  .topRow,
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,76 @@
+.product {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-lg);
+  background: var(--surface-soft);
+}
+
+.imageBox {
+  min-height: clamp(18rem, 34vw, 28rem);
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.details {
+  display: grid;
+  gap: 1rem;
+}
+
+.details h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+}
+
+.seller {
+  color: var(--color-secondary);
+  font-size: 0.8rem;
+}
+
+.details p {
+  max-width: 28rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.priceBox {
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.buyRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buyButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 9rem;
+  min-height: 3rem;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-sm);
+  background: rgba(212, 163, 115, 0.12);
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 720px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+
+  .buyRow {
+    justify-content: flex-start;
+  }
+}

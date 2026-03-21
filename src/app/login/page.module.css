@@ -1,0 +1,70 @@
+.login {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.panel {
+  width: min(620px, 100%);
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.panel h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.copy {
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.9rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.option input {
+  margin-top: 0.25rem;
+}
+
+.option span {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.option small {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.submit {
+  min-height: 3rem;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-sm);
+  background: rgba(212, 163, 115, 0.14);
+  color: var(--color-text-primary);
+}

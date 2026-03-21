@@ -1,0 +1,97 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(320px, 1.1fr);
+  gap: 1.5rem;
+}
+
+.gate,
+.panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.panel {
+  padding: clamp(1.5rem, 2.5vw, 2rem);
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-xl);
+  background: var(--surface-soft);
+}
+
+.eyebrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.panel h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.panel p {
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+}
+
+.form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0.95rem 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.14);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--color-text-primary);
+}
+
+.submit,
+.linkButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.2rem;
+  border: 1px solid rgba(248, 250, 252, 0.16);
+  border-radius: var(--radius-sm);
+  background: rgba(212, 163, 115, 0.14);
+  color: var(--color-text-primary);
+}
+
+.items {
+  display: grid;
+  gap: 1rem;
+}
+
+.itemCard {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+  border: 1px solid rgba(248, 250, 252, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.itemHeader h2 {
+  font-size: 1.15rem;
+}
+
+.empty {
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 900px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
