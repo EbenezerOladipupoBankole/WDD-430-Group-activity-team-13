@@ -9,11 +9,11 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(248, 250, 252, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl);
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.02) 100%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%),
     var(--surface-strong);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(16px);
@@ -33,16 +33,16 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 3rem;
-  min-height: 2.5rem;
-  padding: 0 1rem;
-  border: 1px solid rgba(248, 250, 252, 0.18);
+  min-width: 3.5rem;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid rgba(212, 163, 115, 0.3);
   border-radius: var(--radius-sm);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(212, 163, 115, 0.05);
   font-family: var(--font-primary), sans-serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: lowercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  letter-spacing: -0.02em;
 }
 
 .nav {
@@ -53,13 +53,16 @@
 
 .nav a {
   color: var(--color-text-primary);
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  opacity: 0.8;
 }
 
 .nav a:hover,
 .nav a[data-active="true"] {
   color: var(--color-secondary);
+  opacity: 1;
 }
 
 .cartButton {

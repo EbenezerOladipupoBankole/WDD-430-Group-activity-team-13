@@ -30,7 +30,7 @@ export function SiteShell({ children, currentPath }: SiteShellProps) {
       <div className={styles.frame}>
         <header className={styles.header}>
           <Link className={styles.logo} href="/">
-            logo
+            Handcrafted Haven
           </Link>
 
           <nav className={styles.nav} aria-label="Primary">
